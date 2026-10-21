@@ -1,0 +1,8 @@
+torch>=2.1
+diffusers>=0.29
+numpy
+scipy
+scikit-learn
+pandas
+pillow
+matplotlib
