@@ -71,15 +71,7 @@ cls = torch.tensor([1]).cuda()                            # class index (see npg
 out = model(x, cls)                                       # anomaly_map (B,256,256), score (B,), reconstruction
 ```
 
-## Results (MVTec-AD, `checkpoints/npgfm_mvtec.pt`, N = 10)
 
-| I-AUROC | I-AP | I-F1max | P-AUROC | P-AP | P-F1max | AUPRO |
-|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| 96.2 | 98.7 | 96.1 | 95.7 | 67.5 | 64.6 | 88.6 |
-
-Mean over the 15 classes, measured on one RTX 5090 with seed 0. Results vary slightly between runs because the routed prototype is chosen at random.
-
-Per-class numbers: `python evaluate.py --out results.json`.
 
 ## Repository layout
 
